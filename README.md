@@ -124,12 +124,12 @@ The column 'Flags' holds several different potential variables including, no_mar
 ## Using the create_fastas() function to select the records of interest to create a fasta file of molecular sequence data.
 Using the A_summary.txt file from the auto_seq_download() function a table of target genera and associated names for target molecular markers needs to be manually assembled. There will most likely be multiple names for the same molecular marker due to variation in naming conventions. The format to construct the file is shown below. The file used in this example is included in the Example file folder and is named Chipmunk_marker_table.dat. 
 
-  Eutamias	Eutamias	Tamias	Tamias	Neotamias	Neotamias
-  CYTOCHROMEB	CYTOCHROMECOXIDASESUBUNITI	CYTB	COI-5P	CYTOCHROMEB	CYTOCHROMECOXIDASESUBUNITI
-  CYTOCHROME-B	CYTOCHROMEOXIDASESUBUNIT1	CYTOCHROMEB	CYTOCHROMECOXIDASESUBUNIT1	CYTOCHROME-B	CYTOCHROMEOXIDASESUBUNIT1
-  CYTOCHROMEBOXIDASE	CYTOCHROMEOXIDASESUBUNITI	CYTOCHROME-B	CYTOCHROMECOXIDASESUBUNITI	CYTOCHROMEBOXIDASE	CYTOCHROMEOXIDASESUBUNITI
-		  CYTOCHROMEBOXIDASE	CYTOCHROMEOXIDASESUBUNIT1		
-  			CYTOCHROMEOXIDASESUBUNITI		
+ 	Eutamias	Eutamias	Tamias	Tamias	Neotamias	Neotamias
+	CYTOCHROMEB	CYTOCHROMECOXIDASESUBUNITI	CYTB	COI-5P	CYTOCHROMEB	CYTOCHROMECOXIDASESUBUNITI
+	CYTOCHROME-B	CYTOCHROMEOXIDASESUBUNIT1	CYTOCHROMEB	CYTOCHROMECOXIDASESUBUNIT1	CYTOCHROME-B	CYTOCHROMEOXIDASESUBUNIT1
+	CYTOCHROMEBOXIDASE	CYTOCHROMEOXIDASESUBUNITI	CYTOCHROME-B	CYTOCHROMECOXIDASESUBUNITI	CYTOCHROMEBOXIDASE	CYTOCHROMEOXIDASESUBUNITI
+	CYTOCHROMEBOXIDASE	CYTOCHROMEOXIDASESUBUNIT1		
+	CYTOCHROMEOXIDASESUBUNITI		
 
 The A_Total_Table.dat and the constructed Chipmunk_marker_table.dat were selected when prompted after running the create_fastas() function. For this example when running the create_fastas() function no arguments were used as all of the default arguments were wanted. These defaults would not include any records that had a flag, indicating a potential non-target or problematic sequence. The flags in question are no_marker, no_taxa, no_seq, name_issue, taxa_digits, taxa_punct, wrong_taxa. Only records with '-' were used to construct the fasta files. The following is the output on the R screen for this example.
 
