@@ -3,7 +3,7 @@
 
 # Description:
 
-This repository contains the example files and outputs from the example for the MACER package located at rgyoung6/MACER. The Molecular Acquisition, Cleaning, and Evaluation in R (MACER) is a tool to assemble, align, trim, and evaluate molecular sequence datasets from BOLD and GenBank.
+This repository contains the example files and outputs for the MACER package located at rgyoung6/MACER. The Molecular Acquisition, Cleaning, and Evaluation in R (MACER) is a tool to assemble, align, trim, and evaluate molecular sequence datasets from BOLD and GenBank.
 
 # Functions:
 **auto_seq_download()**<br/>
@@ -13,9 +13,12 @@ This repository contains the example files and outputs from the example for the 
 
 # Installation 
 
-MACER is not currently on Comprehensive R Archive Network (CRAN) and so you have two ways to use the package functions.
+## 1. Install from CRAN
 
-## 1. Install via GitHub
+> install.packages('MACER')<br/>
+> library(devtools)<br/>
+
+## 2. Install via GitHub
 Run the following commands in your R terminal...<br/>
 
 > install.packages("devtools")<br/>
@@ -24,7 +27,7 @@ Run the following commands in your R terminal...<br/>
 
 **Note:** the first command to install the "devtools" may not be necessary if already installed.<br/>
 
-## 2. Install through download from GitHub.
+## 3. Install through download from GitHub.
 Navigate to the [MACER](https://github.com/rgyoung6/MACER) GitHub page. Download the files associated with this page to your local computer and place them somewhere in the main file folder named MACER. Then run the following command pointing to that location on your local computer by replacing the HERE with the path in the below command...<br/>
 > library("MACER", lib.loc="HERE")<br/>
 
@@ -44,7 +47,7 @@ This function takes an input fasta file and removes genus level outliers and spe
 
 # Running MACER 
 
-## NOTE: When running MACER scripts the paths for the files selected cannot have whitespace! Any file with whitespace in the file naming may cause the program to not run and end in an error, or may result in unexpected output.
+## NOTE: When running MACER scripts, the paths for the files selected cannot have whitespace! Any file with whitespace in the file naming may cause the program to not run and end in an error, or may result in unexpected output.
 
 # Package pipeline example:
 The following example will walk through the use of the four main function in the MACER package. To illustrate the use of the package this example will use chipmunks as the example. The three genera, Eutamias, Neotamias, Tamias were used to search both BOLD and GenBank. Although Eutamias and Neotamias are not currently accepted taxonomic genera, these were retained to evaluate potential data with older taxonomic naming conventions. All associated files necessary to run this example, and the outputs from the running of this example are included in the GitHub MACER repository and the 'Example' file folder.
